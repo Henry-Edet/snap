@@ -91,17 +91,15 @@ body {
     transform: translateY(-2px);   /*this is used to design a button to have a 3d effect of clicking*/
 }
 
-/* =======BUTTONS========= */
+/* =======FEATURE_BUTTONS========= */
 .features-dropdown{
     /* border: 1px solid springgreen; */
-    display: flex;
+    display: none;
     flex-direction: column;
-    /* align-items: center; */
     gap: 2rem;
     width: 15rem;
     padding: 2rem 3rem;
-    /* margin-top: 2rem; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 10px;
     position: absolute; 
     top: 4rem;
@@ -118,7 +116,29 @@ body {
 .features-dropdown a img{
     display: inline-block;
 }
-/* ===========BODY================ */
+
+/* ======COMPANY_BUTTONS========= */
+.company-dropdown{
+    /* border: 1px solid springgreen; */
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    width: 11rem;
+    padding: 2rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    position: absolute; 
+    top: 4rem;
+    left: 0;
+}
+
+.company-dropdown a{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 1rem;
+}
+/* ============BODY============== */
 .hero-section{
     /* border: 2px solid black; */
     display: flex;
