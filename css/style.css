@@ -47,6 +47,11 @@ body {
     gap: 5rem;
 }
 
+.header-left ul li{
+    /* border: 1px solid red; */
+    position: relative;
+}
+
 .header-left li a{
     color: #000;
     font-size: 1.4rem;
@@ -83,9 +88,36 @@ body {
 }
 
 .header-right button:active{
-    transform: translateY(-2px);
+    transform: translateY(-2px);   /*this is used to design a button to have a 3d effect of clicking*/
 }
 
+/* =======BUTTONS========= */
+.features-dropdown{
+    /* border: 1px solid springgreen; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 2rem;
+    width: 15rem;
+    padding: 2rem 3rem;
+    /* margin-top: 2rem; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position: absolute; 
+    top: 4rem;
+    right: 0;
+}
+
+.features-dropdown a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.features-dropdown a img{
+    display: inline-block;
+}
 /* ===========BODY================ */
 .hero-section{
     /* border: 2px solid black; */
@@ -167,52 +199,4 @@ body {
     align-items: center;
     gap: 3rem;
 }
-/* .Body-work{
-    border: 2px solid yellow;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 2;
-    /* padding: 10rem 5rem; */
 
-
-/* .write-up{
-    margin: 3rem 5rem;
-} */
-
-/* .make-remote{
-    border: 2px solid red;
-    font-size: 3rem;
-    width: 100%;
-}
-
-.tiny-write{
-    border: 2px solid teal;
-    font-size: 1.4rem;
-    line-height: 1.6;
-} */
-
-/* .btn-learn{
-    background-color: #000;
-    border-radius: 10px;
-    align-self: flex-start;
-    padding: 2rem;
-    text-align: center;
-} */
-
-/* .learn-bar{
-    color: white;
-}
-
-.parent-check{
-    display: flex;
-    align-self: flex-start;
-    padding: 1rem 5rem;
-}
-
-.audio-phile>img{
-    margin: -1rem 3rem;
-}
-
-.meet-here>img{
-    margin: 0rem 3rem 3rem 1rem;
-} */
