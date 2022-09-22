@@ -91,6 +91,17 @@ body {
     transform: translateY(-2px);   /*this is used to design a button to have a 3d effect of clicking*/
 }
 
+/* ====mobile header part====== */
+.nav-icon{
+    display: none;
+    font-size: 2.8rem;
+    color: #000;
+}
+
+.mobile-nav{
+    display: none;
+}
+
 /* =======FEATURE_BUTTONS========= */
 .features-dropdown{
     /* border: 1px solid springgreen; */
@@ -117,6 +128,19 @@ body {
     display: inline-block;
 }
 
+.features-img-up{
+    display: none;
+}
+
+.features-link{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.features-link>img{
+    transform: scale(0.4);
+}
+
 /* ======COMPANY_BUTTONS========= */
 .company-dropdown{
     /* border: 1px solid springgreen; */
@@ -138,6 +162,20 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
+.company-img-up{
+    display: none;
+}
+
+.company-link{
+    /* border: 1px solid purple; */
+    display: flex;
+}
+
+.company-link>img{
+    transform: scale(0.4);
+}
+
 /* ============BODY============== */
 .hero-section{
     /* border: 2px solid black; */
@@ -220,3 +258,64 @@ body {
     gap: 3rem;
 }
 
+/* ====================MEDIA QUERIES====================== */
+
+@media screen and (max-width:375px) {
+    .nav-icon{
+        display: block;
+    }
+
+    .mobile-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 4rem 5vw;
+        z-index: 100;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.4));
+        transform: translateY(-100%);
+        transition: all 400ms ease-in; 
+    }
+
+    .mobile-nav top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav .mobile-icon{
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .mobile-nav .mobile-logo{
+        font-size: 2.8rem;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .mobile-list{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.5rem;
+        border-radius: 1rem;
+    }
+
+    .mobile-list li{
+        padding: 4rem 0 4rem 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-list li:last-of-type{
+        border-bottom: none;
+    }
+
+    .mobile-link{
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: var(--color-Medium-Gray);
+    }
+}

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>snap</title>
 
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
@@ -18,7 +20,8 @@
         <ul>
           <li class="features-link">
             <a href="#">Features</a>
-            <img src="./images/icon-arrow-down.svg" />
+            <img class="features-img-down" src="./images/icon-arrow-down.svg" />
+            <img class="features-img-up" src="./images/icon-arrow-up.svg" />
 
             <div class="features-dropdown">
               <a>
@@ -41,7 +44,8 @@
           </li>
           <li class="company-link">
             <a href="#">Company</a>
-            <img src="./images/icon-arrow-down.svg" />
+            <img class="company-img-dwn" src="./images/icon-arrow-down.svg" />
+            <img class="company-img-up" src="./images/icon-arrow-up.svg" />
 
             <div class="company-dropdown">
               <a href="#">
@@ -67,8 +71,48 @@
     <div class="header-right">
       <a href="#">Login</a>
       <button>Register</button>
+      
+      <div class="nav-icon">
+        <i class="uil uil-bars"></i> 
+      </div>
+    </div>
+
+    <div class="mobile-nav">
+      <div class="top">
+        <div class="mobile-logo"><img src="./images/logo.svg" /></div>
+        <div class="mobile-icon"><i class="uil uil-times"></i></div>
+      </div>
+
+      <ul class="mobile-list">
+        <li>
+          <a href="#" class="mobile-link">
+            <img class="features-img-down" src="./images/icon-arrow-down.svg" />
+            <img class="features-img-up" src="./images/icon-arrow-up.svg" />
+
+              <div class="features-dropdown">
+                <a>
+                  <img src="./images/icon-todo.svg" alt="">
+                  <p>Todo List</p>
+                </a>
+                <a>
+                  <img src="./images/icon-calendar.svg" alt="">
+                  <p>Calendar</p>
+                </a>
+                <a>
+                  <img src="./images/icon-reminders.svg" alt="">
+                  <p>Reminder</p>
+                </a>
+                <a>
+                  <img src="./images/icon-planning.svg" alt="">
+                  <p>Planning</p>
+                </a>
+              </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
+
   <div class="hero-section">
     <div class="hero-left">
       <div class="hero-top">
